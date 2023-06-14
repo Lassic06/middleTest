@@ -63,6 +63,11 @@ public class FrontController extends HttpServlet {
 		map.put("/memberLogin.do", new MemberLogin());
 		map.put("/memberLogOut.do", new MemberLogOut());
 		
+		map.put("/noticeList.do", new NoticeList()); // 공지사항 게시판
+		map.put("/noticeInsertForm.do", new NoticeInsertForm()); // 인서트 폼 호출
+		map.put("/noticeInsert.do", new NoticeInsert()); // 공지사항 인서트 기능
+		map.put("/noticeSelect.do", new NoticeSelect()); //공지사항 상세보기
+		map.put("/noticeDelete", new NoticeDelete());
 		
 		//제품등록 폼
 		map.put("/productList.do", new ProductList());

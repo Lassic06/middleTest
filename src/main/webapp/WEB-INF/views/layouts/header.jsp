@@ -52,7 +52,7 @@
                             </ul>
                         </li>
                         <li><a href="./product-page.html">About</a></li>
-                        <li><a href="./check-out.html">Blog</a></li>
+                        <li><a href="noticeList.do">Blog</a></li>
                         <li><a href="./contact.html">Contact</a></li>
                     </ul>
                 </nav>
