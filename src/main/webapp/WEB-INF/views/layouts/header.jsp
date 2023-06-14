@@ -13,7 +13,7 @@
         <div class="container-fluid">
             <div class="inner-header">
                 <div class="logo">
-                    <a href="main.do"><img src="img/logo.png" alt="logo"></a>
+                    <a href="./index.html"><img src="img/logo.png" alt=""></a>
                 </div>
                 <div class="header-right">
                     <img src="img/icons/search.png" alt="" class="search-trigger">
@@ -52,7 +52,7 @@
                             </ul>
                         </li>
                         <li><a href="./product-page.html">About</a></li>
-                        <li><a href="noticeList.do">Blog</a></li>
+                        <li><a href="./check-out.html">Blog</a></li>
                         <li><a href="./contact.html">Contact</a></li>
                     </ul>
                 </nav>

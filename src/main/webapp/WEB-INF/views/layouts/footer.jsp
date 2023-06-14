@@ -8,6 +8,7 @@
 </head>
 <body>
 <footer class="footer-section spad">
+      <a href="#" class="top">Top</a>
         <div class="container">
            
             <div class="footer-widget">
@@ -17,12 +18,12 @@
         <div class="social-links-warp">
 			<div class="container">
 				<div class="social-links">
-					<a href="" class="instagram"><i class="fa fa-instagram"></i><span>instagram</span></a>
-					<a href="" class="pinterest"><i class="fa fa-pinterest"></i><span>pinterest</span></a>
-					<a href="" class="facebook"><i class="fa fa-facebook"></i><span>facebook</span></a>
-					<a href="" class="twitter"><i class="fa fa-twitter"></i><span>twitter</span></a>
-					<a href="" class="youtube"><i class="fa fa-youtube"></i><span>youtube</span></a>
-					<a href="" class="tumblr"><i class="fa fa-tumblr-square"></i><span>tumblr</span></a>
+					<a href="https://www.instagram.com/" class="instagram"><i class="fa fa-instagram"></i><span>instagram</span></a>
+					<a href="https://www.pinterest.co.kr/" class="pinterest"><i class="fa fa-pinterest"></i><span>pinterest</span></a>
+					<a href="https://ko-kr.facebook.com/" class="facebook"><i class="fa fa-facebook"></i><span>facebook</span></a>
+					<a href="https://twitter.com/" class="twitter"><i class="fa fa-twitter"></i><span>twitter</span></a>
+					<a href="https://www.youtube.com/" class="youtube"><i class="fa fa-youtube"></i><span>youtube</span></a>
+					<a href="https://www.tumblr.com/" class="tumblr"><i class="fa fa-tumblr-square"></i><span>tumblr</span></a>
 				</div>
 			</div>
 

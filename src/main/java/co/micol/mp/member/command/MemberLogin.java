@@ -25,7 +25,6 @@ public class MemberLogin implements Command {
 		if(vo != null) {
 			session.setAttribute("id", vo.getMemberId());
 			session.setAttribute("name", vo.getMemberName());
-			session.setAttribute("auth", vo.getMemberAuth());
 			
 		}
 		return "main/main";

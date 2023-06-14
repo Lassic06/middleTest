@@ -9,6 +9,7 @@ public class ProductCategory implements Command {
 
 	@Override
 	public String exec(HttpServletRequest request, HttpServletResponse response) {
+
 		return "product/productCategories";
 	}
 
