@@ -26,15 +26,7 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-<style>
-  a.top {
-        position: fixed; 
-        left: 95%;
-        bottom: 50px;
-        display: inline;
-        float: right;
-      }
-</style>
+
 <body>
     <!-- Page Preloder -->
     <div id="preloder">
@@ -53,7 +45,7 @@
 	<!-- Search model end -->
 
     <!-- Header Section Begin -->
-   	<tiles:insertAttribute name="header"></tiles:insertAttribute>
+    <tiles:insertAttribute name="header"></tiles:insertAttribute>
  
   <tiles:insertAttribute name="body"></tiles:insertAttribute>
 	
@@ -71,22 +63,6 @@
     <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/mixitup.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script>
-      $( document ).ready( function() {
-        $( window ).scroll( function() {
-          if ( $( this ).scrollTop() > 200 ) {
-            $( '.top' ).fadeIn();
-          } else {
-            $( '.top' ).fadeOut();
-          }
-        } );
-        $( '.top' ).click( function() {
-          $( 'html, body' ).animate( { scrollTop : 0 }, 400 );
-          return false;
-        } );
-      } );
-    </script>
 </body>
 
 </html>
