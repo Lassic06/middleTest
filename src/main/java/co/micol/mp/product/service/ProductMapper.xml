@@ -10,4 +10,8 @@
 		#{productImg},#{productDir},#{productText},0,SYSDATE,#{productAmount})
 	</insert>
 	
+	<select id="product"
+		resultType="co.micol.mp.product.service.ProductVO">
+		SELECT * FROM PRODUCT WHERE PRODUCT_ID ='asdasd'
+	</select>
 </mapper>

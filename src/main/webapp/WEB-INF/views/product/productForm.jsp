@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
@@ -8,30 +9,68 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<div align="center">
-		<table border="1">
-			<thead>
-				<tr>
-					<th width="100">제품코드</th>
-					<th width="200">제품이미지</th>
-					<th width="200">제품명</th>
-					<th width="200">제품가격</th>
-					<th width="100">조회수</th>
-				</tr>
-			</thead>
-			<tbody>
-				<c:forEach items="${products}" var="p">
-					<tr>
-						<td align="center">${p.productId }</td>
-						<td>${p.productImg}</td>
-						<td align="center">${p.productName }</td>
-						<td>${p.productPrice }</td>
-						<td>
-					</tr>
-				</c:forEach>
-			</tbody>
-		</table>
-	</div>
+
+	<section class="product-page">
+		<div class="container">
+			<div class="product-control">
+				<a href="#">Previous</a> <a href="#">Next</a>
+			</div>
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="product-slider owl-carousel">
+						<div class="product-img">
+							<figure>
+								<img src="images/${product.productImg }" alt="img">
+								<div class="p-status">new</div>
+							</figure>
+						</div>
+						<div class="product-img">
+							<figure>
+								<img src="images/${product.productImg }" alt="img">
+								<div class="p-status">new</div>
+							</figure>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-lg-6">
+					<div class="product-content">
+						<h2>${product.productName }</h2>
+						<div class="pc-meta">
+							<h5>
+								<fmt:formatNumber value="${product.productPrice}"
+									pattern="#,###원" />
+							</h5>
+							<div class="rating">
+								<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+									class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+									class="fa fa-star"></i>
+							</div>
+						</div>
+						<p>${product.productText }</p>
+						<ul class="tags">
+							<li><span>Category :</span> Men’s Wear</li>
+						</ul>
+						<div class="product-quantity">
+							<div class="pro-qty">
+								<input type="text" value="1">
+							</div>
+						</div>
+						<c:if test="${not empty id }">	
+								<a href="" class="primary-btn pc-btn">Add to cart</a>
+						</c:if>
+						<!-- 장바구니 가는 역할 -->
+						<ul class="p-info">
+							<li>Product Information</li>
+							<li>Reviews</li>
+							<li>Product Care</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<br>
 	<br>
 </body>
 </html>

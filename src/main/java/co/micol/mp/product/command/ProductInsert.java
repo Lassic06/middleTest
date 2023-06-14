@@ -22,10 +22,14 @@ public class ProductInsert implements Command {
 		ProductService ps = new ProductServiceImpl();
 		ProductVO vo = new ProductVO();
 		
-		String dir =File.separator+ "img" +File.separator + "product" + File.separator;
+		//String dir =File.separator+ "img" +File.separator + "product" + File.separator;
+		String dir =File.separator+ "images" + File.separator;
 		String saveDir = request.getSession().getServletContext().getRealPath(dir);
+		
 		saveDir += File.separator;
 		int maxSize = 100*1024*1024;
+		System.out.println(dir);
+		System.out.println(saveDir);
 		
 		try {
 			MultipartRequest multi = new MultipartRequest(
@@ -35,9 +39,11 @@ public class ProductInsert implements Command {
 												"utf-8", 
 												new DefaultFileRenamePolicy());
 			String pfile = multi.getFilesystemName("pfile");
-			pfile = saveDir + pfile; 
+			System.out.println(pfile);
+			 
+			System.out.println(pfile);
 			String ofile = multi.getOriginalFileName("pfile");
-			
+			System.out.println(ofile);
 			vo.setProductId(multi.getParameter("productId"));
 			vo.setProductName(multi.getParameter("productName"));
 			vo.setProductPrice(Integer.valueOf(multi.getParameter("productPrice")));
