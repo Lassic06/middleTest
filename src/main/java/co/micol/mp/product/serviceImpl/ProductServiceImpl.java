@@ -23,7 +23,7 @@ public class ProductServiceImpl implements ProductService {
 	@Override
 	public ProductVO product(ProductVO vo) {
 		// TODO Auto-generated method stub
-		return null;
+		return map.product(vo);
 	}
 	
 	@Override
