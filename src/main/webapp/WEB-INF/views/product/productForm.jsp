@@ -1,6 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
- <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>	
+
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -60,6 +63,12 @@
                             <li>Reviews</li>
                             <li>Product Care</li>
                         </ul>
+                       <!-- 장바구니 가는 역할 -->
+						            <ul class="p-info">
+						              	<li>Product Information</li>
+							              <li>Reviews</li>
+							              <li>Product Care</li>
+						            </ul>
                     </div>
                 </div>
             </div>
@@ -76,9 +85,6 @@
 	    	<input type="hidden" id="reviewCheck" name="productId" value="${product.productId }">
 	    </div>
     </form>
-<script type="text/javascript">
-	function 
-</script>
 </body>
 
 </html>

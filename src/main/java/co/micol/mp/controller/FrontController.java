@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import co.micol.mp.cart.command.cartInsert;
 import co.micol.mp.common.Command;
 import co.micol.mp.main.command.MainCommand;
 import co.micol.mp.member.command.AjaxCheckId;
@@ -20,6 +21,13 @@ import co.micol.mp.member.command.MemberLogOut;
 import co.micol.mp.member.command.MemberLogin;
 import co.micol.mp.member.command.MemberLoginForm;
 import co.micol.mp.member.command.RegisterForm;
+
+import co.micol.mp.notice.command.NoticeDelete;
+import co.micol.mp.notice.command.NoticeInsert;
+import co.micol.mp.notice.command.NoticeInsertForm;
+import co.micol.mp.notice.command.NoticeList;
+import co.micol.mp.notice.command.NoticeSelect;
+
 import co.micol.mp.product.command.ProductCategory;
 import co.micol.mp.product.command.ProductForm;
 import co.micol.mp.product.command.ProductInsert;
@@ -62,6 +70,10 @@ public class FrontController extends HttpServlet {
 		map.put("/productInsert.do", new ProductInsert());
 		map.put("/productForm.do", new ProductForm());
 		map.put("/productCategory.do", new ProductCategory());
+
+		//장바구니 폼
+		map.put("/cartInsert.do", new cartInsert());
+
 		
 	}
 
