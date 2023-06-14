@@ -20,11 +20,8 @@ import co.micol.mp.member.command.MemberLogOut;
 import co.micol.mp.member.command.MemberLogin;
 import co.micol.mp.member.command.MemberLoginForm;
 import co.micol.mp.member.command.RegisterForm;
-import co.micol.mp.notice.command.NoticeDelete;
-import co.micol.mp.notice.command.NoticeInsert;
-import co.micol.mp.notice.command.NoticeInsertForm;
-import co.micol.mp.notice.command.NoticeList;
-import co.micol.mp.notice.command.NoticeSelect;
+import co.micol.mp.product.command.ProductCategory;
+import co.micol.mp.product.command.ProductForm;
 import co.micol.mp.product.command.ProductInsert;
 import co.micol.mp.product.command.ProductInsertForm;
 import co.micol.mp.product.command.ProductList;
@@ -57,17 +54,14 @@ public class FrontController extends HttpServlet {
 		map.put("/memberLoginForm.do", new MemberLoginForm());
 		map.put("/memberLogin.do", new MemberLogin());
 		map.put("/memberLogOut.do", new MemberLogOut());
-		map.put("/noticeList.do", new NoticeList()); // 공지사항 게시판
-		map.put("/noticeInsertForm.do", new NoticeInsertForm()); // 인서트 폼 호출
-		map.put("/noticeInsert.do", new NoticeInsert()); // 공지사항 인서트 기능
-		map.put("/noticeSelect.do", new NoticeSelect()); //공지사항 상세보기
-		map.put("/noticeDelete.do", new NoticeDelete());
 		
 		
 		//제품등록 폼
 		map.put("/productList.do", new ProductList());
 		map.put("/productInsertForm.do", new ProductInsertForm());
 		map.put("/productInsert.do", new ProductInsert());
+		map.put("/productForm.do", new ProductForm());
+		map.put("/productCategory.do", new ProductCategory());
 		
 	}
 

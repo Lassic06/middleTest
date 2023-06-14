@@ -13,7 +13,7 @@
         <div class="container-fluid">
             <div class="inner-header">
                 <div class="logo">
-                    <a href="main.do"><img src="img/logo.png" alt="logo"></a>
+                    <a href="./index.html"><img src="img/logo.png" alt=""></a>
                 </div>
                 <div class="header-right">
                     <img src="img/icons/search.png" alt="" class="search-trigger">
@@ -39,20 +39,20 @@
 			
                 <nav class="main-menu mobile-menu">
                     <ul>
-                        <li><a class="active" href="main.do">Home</a></li>
-                        <li><a href="./categories.html">Shop</a>
+                        <li><a class="active" href="./index.html">Home</a></li>
+                        <li><a href="productCategory.do">Shop</a>
                             <ul class="sub-menu">
                                 <li><a href="productList.do">Product Page</a></li>
                                 <li><a href="shopping-cart.html">Shopping Card</a></li>
-                                <li><a href="check-out.html">Check out</a></li>
+                                <li><a href="productForm.do">Check out</a></li>
                                 <li><a href="productInsertForm.do">Product Insert</a></li>
-                                <c:if test="${auth eq 'A'}">
+                                <c:if test="${memberAuth eq 'A'}">
                                 <li><a href="productInsertForm.do">Product Insert</a></li>
                                 </c:if>
                             </ul>
                         </li>
                         <li><a href="./product-page.html">About</a></li>
-                        <li><a href="noticeList.do">Blog</a></li>
+                        <li><a href="./check-out.html">Blog</a></li>
                         <li><a href="./contact.html">Contact</a></li>
                     </ul>
                 </nav>
