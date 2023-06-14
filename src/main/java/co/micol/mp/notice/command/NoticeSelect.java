@@ -15,12 +15,12 @@ public class NoticeSelect implements Command {
 		NoticeService ns = new NoticeServiceImpl();
 		NoticeVO vo = new NoticeVO();
 
-		vo.setNoticeId(request.getParameter("notictId"));
+		vo.setNoticeId(request.getParameter("noticeId"));
 		vo = ns.noticeSelect(vo);
 		
 		request.setAttribute("notice", vo);
 
 		return "notice/noticeSelect";
-
+ 
 	}
 }

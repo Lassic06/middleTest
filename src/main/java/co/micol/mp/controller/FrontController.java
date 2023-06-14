@@ -20,6 +20,7 @@ import co.micol.mp.member.command.MemberLogOut;
 import co.micol.mp.member.command.MemberLogin;
 import co.micol.mp.member.command.MemberLoginForm;
 import co.micol.mp.member.command.RegisterForm;
+import co.micol.mp.notice.command.NoticeDelete;
 import co.micol.mp.notice.command.NoticeInsert;
 import co.micol.mp.notice.command.NoticeInsertForm;
 import co.micol.mp.notice.command.NoticeList;
@@ -60,6 +61,7 @@ public class FrontController extends HttpServlet {
 		map.put("/noticeInsertForm.do", new NoticeInsertForm()); // 인서트 폼 호출
 		map.put("/noticeInsert.do", new NoticeInsert()); // 공지사항 인서트 기능
 		map.put("/noticeSelect.do", new NoticeSelect()); //공지사항 상세보기
+		map.put("/noticeDelete.do", new NoticeDelete());
 		
 		
 		//제품등록 폼
